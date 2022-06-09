@@ -48,18 +48,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtState = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.cbDesignation = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.cbDepartment = new System.Windows.Forms.ComboBox();
+            this.cmdAdd = new System.Windows.Forms.Button();
+            this.cmdSave = new System.Windows.Forms.Button();
+            this.cmdDelete = new System.Windows.Forms.Button();
             this.hRDataSet = new DisconnectedEnvironment.HRDataSet();
             this.empdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empdetailsTableAdapter = new DisconnectedEnvironment.HRDataSetTableAdapters.empdetailsTableAdapter();
@@ -195,15 +195,15 @@
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtCode, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtName, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtAddress, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtState, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtCountry, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbDesignation, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.cbDepartment, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(83, 70);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -268,60 +268,60 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Department";
             // 
-            // textBox1
+            // txtCode
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "ccode", true));
-            this.textBox1.Location = new System.Drawing.Point(119, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtCode.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "ccode", true));
+            this.txtCode.Location = new System.Drawing.Point(119, 12);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(266, 20);
+            this.txtCode.TabIndex = 7;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cname", true));
-            this.textBox2.Location = new System.Drawing.Point(119, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cname", true));
+            this.txtName.Location = new System.Drawing.Point(119, 56);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(266, 20);
+            this.txtName.TabIndex = 8;
             // 
-            // textBox3
+            // txtAddress
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "caddress", true));
-            this.textBox3.Location = new System.Drawing.Point(119, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(266, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "caddress", true));
+            this.txtAddress.Location = new System.Drawing.Point(119, 100);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(266, 20);
+            this.txtAddress.TabIndex = 9;
             // 
-            // textBox4
+            // txtState
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cstate", true));
-            this.textBox4.Location = new System.Drawing.Point(119, 144);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(266, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtState.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cstate", true));
+            this.txtState.Location = new System.Drawing.Point(119, 144);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(266, 20);
+            this.txtState.TabIndex = 10;
             // 
-            // textBox5
+            // txtCountry
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "ccountry", true));
-            this.textBox5.Location = new System.Drawing.Point(119, 188);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(266, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtCountry.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCountry.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "ccountry", true));
+            this.txtCountry.Location = new System.Drawing.Point(119, 188);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(266, 20);
+            this.txtCountry.TabIndex = 11;
             // 
-            // comboBox1
+            // cbDesignation
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cDesignation", true));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(119, 231);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(266, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cbDesignation.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbDesignation.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cDesignation", true));
+            this.cbDesignation.FormattingEnabled = true;
+            this.cbDesignation.Location = new System.Drawing.Point(119, 231);
+            this.cbDesignation.Name = "cbDesignation";
+            this.cbDesignation.Size = new System.Drawing.Size(266, 21);
+            this.cbDesignation.TabIndex = 12;
             // 
             // label2
             // 
@@ -343,43 +343,43 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee Code";
             // 
-            // comboBox2
+            // cbDepartment
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cDepartment", true));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(119, 277);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(266, 21);
-            this.comboBox2.TabIndex = 13;
+            this.cbDepartment.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbDepartment.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.empdetailsBindingSource, "cDepartment", true));
+            this.cbDepartment.FormattingEnabled = true;
+            this.cbDepartment.Location = new System.Drawing.Point(119, 277);
+            this.cbDepartment.Name = "cbDepartment";
+            this.cbDepartment.Size = new System.Drawing.Size(266, 21);
+            this.cbDepartment.TabIndex = 13;
             // 
-            // button1
+            // cmdAdd
             // 
-            this.button1.Location = new System.Drawing.Point(568, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 53);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmdAdd.Location = new System.Drawing.Point(568, 115);
+            this.cmdAdd.Name = "cmdAdd";
+            this.cmdAdd.Size = new System.Drawing.Size(126, 53);
+            this.cmdAdd.TabIndex = 2;
+            this.cmdAdd.Text = "Add";
+            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAdd.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // cmdSave
             // 
-            this.button2.Location = new System.Drawing.Point(568, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 53);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmdSave.Location = new System.Drawing.Point(568, 198);
+            this.cmdSave.Name = "cmdSave";
+            this.cmdSave.Size = new System.Drawing.Size(126, 53);
+            this.cmdSave.TabIndex = 3;
+            this.cmdSave.Text = "Save";
+            this.cmdSave.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // cmdDelete
             // 
-            this.button3.Location = new System.Drawing.Point(568, 281);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 53);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cmdDelete.Location = new System.Drawing.Point(568, 281);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(126, 53);
+            this.cmdDelete.TabIndex = 4;
+            this.cmdDelete.Text = "Delete";
+            this.cmdDelete.UseVisualStyleBackColor = true;
             // 
             // hRDataSet
             // 
@@ -400,14 +400,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdDelete);
+            this.Controls.Add(this.cmdSave);
+            this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Empoloyee Details";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -436,23 +436,23 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button cmdAdd;
+        private System.Windows.Forms.Button cmdSave;
+        private System.Windows.Forms.Button cmdDelete;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtState;
+        private System.Windows.Forms.TextBox txtCountry;
+        private System.Windows.Forms.ComboBox cbDesignation;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbDepartment;
         private HRDataSet hRDataSet;
         private System.Windows.Forms.BindingSource empdetailsBindingSource;
         private HRDataSetTableAdapters.empdetailsTableAdapter empdetailsTableAdapter;
